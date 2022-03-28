@@ -377,7 +377,6 @@ p a:hover {
 	padding-bottom:0;
 }
 .body .content-about div {
-	background:url(../images/bg-2-column.png) repeat-y;
 	background-color:#fff;
 	margin:-9px 5px 0 18px;
 	overflow:hidden;
@@ -396,7 +395,8 @@ p a:hover {
 	float:left;
 	margin:0;
 	padding:5px 60px 0 0;
-	width:444px;
+	text-align: center;
+	width:95%;
 }
 .body .content-about div div h1 {
 	color:#7b8846;
