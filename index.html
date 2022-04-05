@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <!-- Website template by vijendra kumawat-->
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<title>Pooja Interior Designer & Decorator</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/slider.css" type="text/css">
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 	<div id="background-green">
 		background
@@ -32,15 +39,23 @@
 					</li>
 				</ul>
 				<div class="connect">
-					<a href="https://www.facebook.com/profile.php?id=100079164142444" id="fb">facebook</a> <a href="https://twitter.com/interior_pooja?t=Kj05KC8OBiwwSws35zbUsA&s=08" id="twitter">twitter</a> <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=poojainteriors20@gmail.com" id="googleplus">google+</a>
+					<a href="https://www.facebook.com/profile.php?id=100079164142444" id="fb">facebook</a> <a
+						href="https://twitter.com/interior_pooja?t=Kj05KC8OBiwwSws35zbUsA&s=08" id="twitter">twitter</a>
+					<a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=poojainteriors20@gmail.com"
+						id="googleplus">google+</a>
 				</div>
 			</div>
 			<div class="body">
 				<div class="content-home">
 					<div>
-						<h3>We are interior architects. What is <span class="beauty">beauty</span> without use. What is <span class="function">function</span> without aesthetics. our <span class="works">works have both</span>.</h3>
+						<h3>We are interior architects. What is <span class="beauty">beauty</span> without use. What is
+							<span class="function">function</span> without aesthetics. our <span class="works">works
+								have both</span>.
+						</h3>
 						<p>
-							<em>"The essence of interior design will always be about people and how they live. It is about the realities of what makes for an attractive, civilized, meaningful environment, not about fashion or what’s in or what’s out. This is not an easy job."</em> 
+							<em>"The essence of interior design will always be about people and how they live. It is
+								about the realities of what makes for an attractive, civilized, meaningful environment,
+								not about fashion or what’s in or what’s out. This is not an easy job."</em>
 						</p>
 					</div>
 					<div class="featured">
@@ -62,11 +77,39 @@
 								<h4><a href="blog.html">Blog</a></h4>
 								<h3><a href="blog.html">Best Paint To Use In The Kitchen</a></h3>
 								<p>
-								  Remember, color is not just color, but mood, temperature and structure.
+									Remember, color is not just color, but mood, temperature and structure.
 								</p>
 								<a href="blog.html">View More Blog Posts</a>
 							</li>
 						</ul>
+					</div>
+
+					<div class="container">
+						<h2>Our Customer</h2>
+						<section class="customer-logos slider">
+							<div class="slide" style="padding: 0;"><img src="images/sbilogo.png" style="padding-bottom: -20px;">
+							</div>
+							<div class="slide"><img src="images/boblogo.jpg"></div>
+							<div class="slide"><img src="images/alstomlogo.jpg"></div>
+							<div class="slide"><img src="images/mofatlallogo.jpg">
+							</div>
+							<div class="slide"><img src="images/suntechlogo.png">
+							</div>
+							<div class="slide"><img src="images/oberoilogo.png">
+							</div>
+							<div class="slide"><img src="images/SummitBusinessPark-Logo-800x600.jpg">
+							</div>
+							<div class="slide"><img src="images/indianbanklogo.png">
+							</div>
+							<div class="slide"><img src="images/ambuja-cement.png">
+							</div>
+							<div class="slide"><img src="images/Aditya_Birla_Grasim_Logo.svg">
+							</div>
+							<div class="slide"><img src="images/Ultratech_Cement_Logo.png">
+							</div>
+							<div class="slide"><img src="images/glenmark-logo.png">
+							</div>
+						</section>
 					</div>
 				</div>
 				<div class="footer">
@@ -94,5 +137,32 @@
 			</div>
 		</div>
 	</div>
+	
+	<script>
+		$(document).ready(function () {
+			$('.customer-logos').slick({
+				slidesToShow: 11,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1500,
+				arrows: false,
+				dots: false,
+				pauseOnHover: false,
+				responsive: [{
+					breakpoint: 1536,
+					settings: {
+						slidesToShow: 4
+					}
+				}, {
+					breakpoint: 1040,
+					settings: {
+						slidesToShow: 7
+					}
+				}]
+			});
+		});
+	</script>
+
 </body>
+
 </html>
